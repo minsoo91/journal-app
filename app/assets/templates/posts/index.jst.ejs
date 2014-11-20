@@ -1,0 +1,9 @@
+<h3>Index</h3>
+<ul>
+  <% posts.forEach(function(post) { %>
+    <li>
+      <a href="#/posts/<%= post.id %>"><%= post.get('title') %></a>
+      <button class="delete" data-id="<%= post.id %>">Delete</button>
+    </li>
+  <% }) %>
+</ul>
